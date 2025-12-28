@@ -7,69 +7,92 @@
     <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
     <style>
         body {
-            /* 金沢の夕暮れグラデーション */
             background: linear-gradient(135deg, #eaddca 0%, #c0a47d 50%, #8e735b 100%);
             background-attachment: fixed;
-            /* 全体に毛筆フォントを適用 */
             font-family: 'Yuji Syuku', serif;
-            line-height: 1.8;
+            line-height: 1.9; /* 行間を少し広げて読みやすく */
             color: #3e3a36;
             margin: 0;
             padding: 20px;
+            /* 全体の基本サイズを2レベルアップ（通常16px→20px相当） */
+            font-size: 20px;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 40px auto;
             background-color: rgba(255, 252, 245, 0.95);
-            padding: 40px;
+            padding: 50px;
             border-radius: 4px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-            border: 1px dotted #d4c5b0; /* 点線にして少しシュールな味付け */
+            border: 2px dotted #c0a47d;
         }
 
         h1 { 
-            border-bottom: 3px double #c0a47d; 
-            padding-bottom: 20px; 
+            border-bottom: 4px double #c0a47d; 
+            padding-bottom: 25px; 
             text-align: center; 
             font-weight: bold; 
-            letter-spacing: 0.2em; 
+            letter-spacing: 0.25em; 
             color: #2c3e50;
-            font-size: 2.2em;
+            /* 見出しを特大に（約48px） */
+            font-size: 2.4em;
         }
 
-        .header-tags { text-align: center; font-size: 1em; color: #7f8c8d; margin-bottom: 40px; }
+        .header-tags { 
+            text-align: center; 
+            font-size: 1.1em; 
+            color: #7f8c8d; 
+            margin-bottom: 50px; 
+            letter-spacing: 0.1em;
+        }
 
         h2 { 
             color: #5d5245; 
-            margin-top: 40px; 
-            font-size: 1.5em; 
-            border-bottom: 1px solid #c0a47d;
+            margin-top: 50px; 
+            /* 中見出しを大きく（約32px） */
+            font-size: 1.6em; 
+            border-bottom: 2px solid #c0a47d;
             display: inline-block;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
 
         .month-box { 
-            padding: 20px 0; 
-            border-bottom: 1px dashed #eee; 
-            position: relative;
+            padding: 25px 0; 
+            border-bottom: 1px dashed #ddd; 
+            /* 本文の文字サイズ（約20px） */
+            font-size: 1em;
         }
 
-        /* 季節の変わり目に少し隙間を作る */
-        .month-box:nth-of-type(3n) { border-bottom: 2px solid #eaddca; }
+        .month-box:nth-of-type(3n) { border-bottom: 3px solid #eaddca; }
 
         .month-title { 
             font-weight: bold; 
             color: #c0a47d; 
-            font-size: 1.3em; 
-            margin-right: 15px;
+            /* 月のラベルを強調（約28px） */
+            font-size: 1.4em; 
+            margin-right: 20px;
             display: inline-block;
-            border: 1px solid #c0a47d;
-            padding: 0 10px;
-            border-radius: 50% 10% 50% 10%; /* シュールな形の枠 */
+            border: 2px solid #c0a47d;
+            padding: 2px 15px;
+            border-radius: 50% 10% 50% 10%;
+            background: #fff;
         }
 
-        .footer { text-align: center; margin-top: 60px; font-size: 0.9em; color: #95a5a6; letter-spacing: 0.3em; }
+        .footer { 
+            text-align: center; 
+            margin-top: 80px; 
+            font-size: 0.9em; 
+            color: #95a5a6; 
+            letter-spacing: 0.4em; 
+        }
+
+        /* スマホ閲覧時でも文字が小さくなりすぎない調整 */
+        @media (max-width: 600px) {
+            body { font-size: 18px; }
+            h1 { font-size: 1.8em; }
+            .container { padding: 25px; }
+        }
     </style>
 </head>
 <body>

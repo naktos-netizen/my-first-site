@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2026 Kanazawa Well-being Roadmap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
     <style>
         body {
-            /* 金沢の夕暮れをイメージした、上品な和風グラデーション（画像不要！） */
+            /* 金沢の夕暮れグラデーション */
             background: linear-gradient(135deg, #eaddca 0%, #c0a47d 50%, #8e735b 100%);
             background-attachment: fixed;
-            font-family: 'Hiragino Mincho ProN', 'serif';
+            /* 全体に毛筆フォントを適用 */
+            font-family: 'Yuji Syuku', serif;
             line-height: 1.8;
             color: #3e3a36;
             margin: 0;
@@ -19,47 +21,82 @@
         .container {
             max-width: 800px;
             margin: 40px auto;
-            /* 和紙のような質感の白背景 */
             background-color: rgba(255, 252, 245, 0.95);
             padding: 40px;
             border-radius: 4px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-            border: 1px solid #d4c5b0;
+            border: 1px dotted #d4c5b0; /* 点線にして少しシュールな味付け */
         }
 
-        h1 { border-bottom: 2px solid #c0a47d; padding-bottom: 15px; text-align: center; font-weight: normal; letter-spacing: 0.15em; color: #2c3e50; }
-        .header-tags { text-align: center; font-size: 0.95em; color: #7f8c8d; margin-bottom: 40px; }
-        h2 { color: #5d5245; margin-top: 40px; font-size: 1.3em; border-left: 4px solid #c0a47d; padding-left: 15px; background: rgba(192, 164, 125, 0.1); }
-        .month-box { padding: 15px 0; border-bottom: 1px solid #eee; }
-        .month-title { font-weight: bold; color: #c0a47d; font-size: 1.1em; margin-right: 12px; }
-        .footer { text-align: center; margin-top: 60px; font-size: 0.8em; color: #95a5a6; letter-spacing: 0.2em; }
+        h1 { 
+            border-bottom: 3px double #c0a47d; 
+            padding-bottom: 20px; 
+            text-align: center; 
+            font-weight: bold; 
+            letter-spacing: 0.2em; 
+            color: #2c3e50;
+            font-size: 2.2em;
+        }
+
+        .header-tags { text-align: center; font-size: 1em; color: #7f8c8d; margin-bottom: 40px; }
+
+        h2 { 
+            color: #5d5245; 
+            margin-top: 40px; 
+            font-size: 1.5em; 
+            border-bottom: 1px solid #c0a47d;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .month-box { 
+            padding: 20px 0; 
+            border-bottom: 1px dashed #eee; 
+            position: relative;
+        }
+
+        /* 季節の変わり目に少し隙間を作る */
+        .month-box:nth-of-type(3n) { border-bottom: 2px solid #eaddca; }
+
+        .month-title { 
+            font-weight: bold; 
+            color: #c0a47d; 
+            font-size: 1.3em; 
+            margin-right: 15px;
+            display: inline-block;
+            border: 1px solid #c0a47d;
+            padding: 0 10px;
+            border-radius: 50% 10% 50% 10%; /* シュールな形の枠 */
+        }
+
+        .footer { text-align: center; margin-top: 60px; font-size: 0.9em; color: #95a5a6; letter-spacing: 0.3em; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>2026年 金沢・真価の年</h1>
-    <div class="header-tags">西野流呼吸法 指導員 ｜ ゴルフ(80切り) ｜ ギター ｜ 資産運用</div>
+    <h1>二〇二六・金沢真価の年</h1>
+    <div class="header-tags">西野流呼吸法 指導員 ／ ゴルフ(80切り) ／ ギター ／ 資産運用</div>
 
-    <h2>第1四半期：静寂と始動</h2>
-    <div class="month-box"><span class="month-title">1月</span>金沢の雪景色の中、丹田を整える。あまりの寒さに、呼吸で自家発電できないか模索する。</div>
-    <div class="month-box"><span class="month-title">2月</span>指導員としての第一歩。ギターは音の間の「静寂」を弾き、一音の響きで白飯が食べられる境地を目指す。</div>
-    <div class="month-box"><span class="month-title">3月</span>ゴルフスイング点検。煩悩と呼吸の調整に苦労しつつ、資産運用の地盤を固める。</div>
+    <h2>第一四半期：静寂と始動</h2>
+    <div class="month-box"><span class="month-title">一月</span>金沢の雪景色の中、丹田を整える。あまりの寒さに、呼吸で自家発電できないか模索する。</div>
+    <div class="month-box"><span class="month-title">二月</span>指導員としての第一歩。ギターは音の間の「静寂」を弾き、一音の響きで白飯が食べられる境地を目指す。</div>
+    <div class="month-box"><span class="month-title">三月</span>ゴルフスイング点検。煩悩と呼吸の調整に苦労しつつ、資産運用の地盤を固める。</div>
 
-    <h2>第2四半期：躍動と洗練</h2>
-    <div class="month-box"><span class="month-title">4月</span>北陸のゴルフ開幕。物理法則と精神力の境界線を見極めて80切りを狙う。</div>
-    <div class="month-box"><span class="month-title">5月</span>新緑の風の中でギターの余韻に酔いしれる。音を詰め込まない贅沢を知り、心の平安を得る。</div>
-    <div class="month-box"><span class="month-title">6月</span>教室に活気が生まれる。資産運用の好調さに支えられ、パットの際も「謎の無敵モード」に突入する。</div>
+    <h2>第二四半期：躍動と洗練</h2>
+    <div class="month-box"><span class="month-title">四月</span>北陸のゴルフ開幕。物理法則と精神力の境界線を見極めて80切りを狙う。</div>
+    <div class="month-box"><span class="month-title">五月</span>新緑の風の中でギターの余韻に酔いしれる。音を詰め込まない贅沢を知り、心の平安を得る。</div>
+    <div class="month-box"><span class="month-title">六月</span>教室に活気が生まれる。資産運用の好調さに支えられ、パットの際も「謎の無敵モード」に突入する。</div>
 
-    <h2>第3四半期：成熟と深化</h2>
-    <div class="month-box"><span class="month-title">7月</span>旬の岩ガキを楽しみ、体の中から整える。美味しすぎる海鮮の前では、不動の心も容易に動く。</div>
-    <div class="month-box"><span class="month-title">8月</span>暑さの中でもバテない「呼吸の力」をゴルフで証明。ギターは一音で白飯が食べられそうな境地へ。</div>
-    <div class="month-box"><span class="month-title">9月</span>秋の不動産需要に向けた仕込みを完了。もはやボールと会話ができそうな気がしてくる。</div>
+    <h2>第三四半期：成熟と深化</h2>
+    <div class="month-box"><span class="month-title">七月</span>旬の岩ガキを楽しみ、体の中から整える。美味しすぎる海鮮の前では、不動の心も容易に動く。</div>
+    <div class="month-box"><span class="month-title">八月</span>暑さの中でもバテない「呼吸の力」をゴルフで証明。ギターは一音で白飯が食べられそうな境地へ。</div>
+    <div class="month-box"><span class="month-title">九月</span>秋の不動産需要に向けた仕込みを完了。もはやボールと会話ができそうな気がしてくる。</div>
 
-    <h2>第4四半期：結実と次なる光</h2>
-    <div class="month-box"><span class="month-title">10月</span>呼吸・体・心が完全に一致。ついに念願の「80切り」を金沢の秋空の下で達成する。</div>
-    <div class="month-box"><span class="month-title">11月</span>一年を共にしたギターを丁寧に弾き込む。少しだけ「高級な弦に変えた」という小さな優越感と共に。</div>
-    <div class="month-box"><span class="month-title">12月</span>生徒や仲間と海鮮を囲む。「呼吸だけで飛距離が伸びないか」と考えながら、感謝で年を越す。</div>
+    <h2>第四四半期：結実と次なる光</h2>
+    <div class="month-box"><span class="month-title">十月</span>呼吸・体・心が完全に一致。ついに念願の「80切り」を金沢の秋空の下で達成する。</div>
+    <div class="month-box"><span class="month-title">十一月</span>一年を共にしたギターを丁寧に弾き込む。少しだけ「高級な弦に変えた」という小さな優越感と共に。</div>
+    <div class="month-box"><span class="month-title">十二月</span>生徒や仲間と海鮮を囲む。「呼吸だけで飛距離が伸びないか」と考えながら、感謝で年を越す。</div>
 
     <div class="footer">© 2026 KANAZAWA LIFE PROJECT</div>
 </div>
